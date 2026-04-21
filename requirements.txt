@@ -16,7 +16,8 @@ langchain-core
 langchain-text-splitters
 chromadb
 sentence-transformers
-transformers
-torch
 numpy
 scikit-learn
+# CPU-only PyTorch (much smaller than GPU version)
+torch==2.1.0 --index-url https://download.pytorch.org/whl/cpu
+transformers
